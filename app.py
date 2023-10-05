@@ -417,4 +417,4 @@ def uplode_files(file_type):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0",host=5000)
+    app.run()
