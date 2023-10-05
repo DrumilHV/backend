@@ -416,5 +416,5 @@ def uplode_files(file_type):
             return "file recieved ! ", 200
 
 
-if __name__ == "__main__":
-    app.run()
+# if __name__ == "__main__":
+#     app.run()
