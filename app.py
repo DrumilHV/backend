@@ -243,6 +243,12 @@ def create_book():
     isbn = data.get("isbn")
     pagecount = data.get("pagecount")
     publisheddate = data.get("publisheddate")
+    # ----------------Made change here-----------------
+    # publisheddate = data.get("publisheddate")
+    # publisheddate = datetime.strptime(
+    #     publisheddate, "%a, %d %b %Y %H:%M:%S %Z").strftime("%Y-%m-%d")
+
+    # --------------till here
     categories = list(''.join(data.get("categories")))
     # categories = categories
     longdescription = data.get("longdescription")
@@ -251,7 +257,7 @@ def create_book():
     shortdescription = data.get("shortdescription")
     status = data.get("status")
     thumbnailurl = data.get("thumbnailurl")
-    authors = list(''.join(data.get("authors")))
+    authors = list(','.join(data.get("authors")))
     print(authors, categories)
 
     print("we came thill before query !")
@@ -407,14 +413,38 @@ def uplode_files(file_type):
             print("Json data recieved!!")
             with open(filename, "r") as json_ptr:
                 for row in json_ptr:
+                    # Replace single quotes with double quotes
+                    row = row.replace("\\'", "`")
+                    # Replace single quotes with double quotes
+                    row = row.replace("\"", "`")
+                    # Replace single quotes with double quotes
+                    row = row.replace("'", "\"")
                     data = json.loads(row)
+                    print("data become json \n")
+                    # print("data\n", data["row_to_json"])
+                    data = data['row_to_json']
+                    print(data['title'])
+                    query = """
+                    INSERT INTO BOOKS(title, isbn, pagecount ,
+                    publisheddate , thumbnailurl, shortdescription, 
+                    longdescription, status, authors, categories, paid, price)
+                    VALUES (%s, %s, %s ,%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    """
+                    params = (
+                        data['title'], data['isbn'],
+                        data['pagecount'], data['publisheddate'],
+                        data['thumbnailurl'], data['shortdescription'], data['longdescription'],
+                        data['status'], data['authors'], data['categories'], data['paid'],
+                        data['price']
+                    )
+                    print(query % params)
 
-                    print(data)
+                print("json data successfull added !!")
 
             os.remove(filename)
             print("File deleted!!")
             return "file recieved ! ", 200
 
 
-# if __name__ == "__main__":
-#     app.run()
+if __name__ == "__main__":
+    app.run()

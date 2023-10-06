@@ -1,0 +1,455 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:31:21] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:31:23] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:31:23] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:31:24] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 410, in uplode_files
+    data = json.loads(row)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:31:31] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:33:12] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:33:14] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:33:14] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:33:15] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:33:25] "GET //export-json-data HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:34:42] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:34:43] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:34:43] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:34:45] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:34:56] "GET //export-json-data HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:36:28] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:36:30] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:36:30] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:36:31] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:36:34] "POST //uplode/json HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:37:12] "GET //export-json-data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:37:36] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:37:37] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:37:37] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:37:38] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 411, in uplode_files
+    print(row["row_to_json"])
+TypeError: string indices must be integers
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:37:45] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:39:29] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:39:30] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:39:30] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:39:32] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 413, in uplode_files
+    print(row["row_to_json"])
+TypeError: string indices must be integers
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:39:34] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:40:46] "GET //book/bookDetils/128 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:40:47] "GET //book/bookDetils/128 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:40:49] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:40:50] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:40:50] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:40:51] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 413, in uplode_files
+    print("data\n", row["row_to_json"])
+TypeError: string indices must be integers
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:40:53] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:42:34] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:42:35] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:42:35] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:42:36] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 411, in uplode_files
+    data = json.load(row)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:42:39] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:43:02] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:43:03] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:43:04] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:43:05] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 411, in uplode_files
+    data = json.load(row)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 16:43:07] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:15:38] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:15:39] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:15:39] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:15:40] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 416, in uplode_files
+    data = json.load(row)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:15:45] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:16:16] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:16:17] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:16:17] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:16:18] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 416, in uplode_files
+    data = json.load(row)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:16:22] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:17:05] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:17:07] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:17:08] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:17:09] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 416, in uplode_files
+    data = json.load(row)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+AttributeError: 'str' object has no attribute 'read'
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:17:11] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:17:54] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:17:55] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:17:55] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:17:56] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:17:59] "POST //uplode/json HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:23:10] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:23:11] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:23:11] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:23:12] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 428, in uplode_files
+    data['pagecount'], data['publisheddae'],
+KeyError: 'publisheddae'
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:23:16] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:24:44] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:24:45] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:24:47] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:24:48] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 429, in uplode_files
+    data['pagecount'], data['publisheddae'],
+KeyError: 'publisheddae'
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:24:49] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:25:36] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:25:38] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:25:38] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:25:39] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 429, in uplode_files
+    data['pagecount'], data['publisheddae'],
+KeyError: 'publisheddae'
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:25:45] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:26:26] "GET //book/bookDetils/128 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:26:27] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:26:27] "GET //book/bookDetils/128 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:26:29] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:26:30] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:26:31] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 429, in uplode_files
+    data['pagecount'], data['publisheddae'],
+KeyError: 'publisheddae'
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:26:31] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:27:12] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:27:13] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:27:13] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:27:14] "GET //home/count HTTP/1.1" 200 -
+ERROR:app:Exception on /uplode/json [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/drumilved/Desktop/assignments/Library System/server/app.py", line 429, in uplode_files
+    data['pagecount'], data['publisheddae'],
+KeyError: 'publisheddae'
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:27:17] "[35m[1mPOST //uplode/json HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:31:33] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:31:34] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:31:34] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:31:37] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:31:43] "POST //uplode/json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:32:19] "GET //search?search-query=1617290086&pre-page=10&page=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:32:19] "GET //search?search-query=1617290086&pre-page=10&page=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:32:20] "GET //search?search-query=1617290086&pre-page=10&page=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:32:26] "GET //book/bookDetils/523 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 17:32:27] "GET //book/bookDetils/523 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:38] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:39] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:39] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:40] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:41] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:42] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:42] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:44] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:45] "GET //query?&start-date=2010&end-date=2030&order=desc&genre=&paid=PAID&page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:46] "GET //query?&start-date=2010&end-date=2030&order=desc&genre=&paid=PAID&page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:46] "GET //query/count?start-date=2010&end-date=2030&order=desc&genre=&paid=PAID HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:37:47] "GET //query/count?start-date=2010&end-date=2030&order=desc&genre=&paid=PAID HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:46:36] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:46:38] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:46:38] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:46:39] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:46:52] "[35m[1mPOST //uplode/csv HTTP/1.1[0m" 202 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:51:47] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:51:47] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:51:47] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:51:47] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:12] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:13] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:14] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:15] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:15] "GET //book/bookDetils/124 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:17] "GET //book/bookDetils/124 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:32] "OPTIONS //book/update/124 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:33] "GET //book/bookDetils/124 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:33] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:34] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:34] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:35] "[35m[1mPATCH //book/update/124 HTTP/1.1[0m" 202 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:36] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:48] "GET //book/bookDetils/411 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:49] "GET //book/bookDetils/411 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:50] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:51] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:51] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:58:52] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:59:17] "OPTIONS //create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:59:18] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:59:18] "[35m[1mPOST //create HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:59:19] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:59:19] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 19:59:20] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 20:00:26] "OPTIONS //create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 20:00:27] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 20:00:27] "[35m[1mPOST //create HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 20:00:29] "GET //home/count HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 20:00:29] "GET //home?page=1&per-page=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Oct/2023 20:00:30] "GET //home/count HTTP/1.1" 200 -
